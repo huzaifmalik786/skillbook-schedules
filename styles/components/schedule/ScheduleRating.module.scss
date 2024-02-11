@@ -1,0 +1,20 @@
+.ScheduleRating {
+  padding: 21px 22px;
+  gap: 10px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  .companyLogos {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    padding: 16px 0;
+
+    img {
+      max-height: 78px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.SessionSection {
+  // padding:60px  40px;
+  // border: 1px solid red;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 6vw;
+  overflow-x: hidden;
+
+  .sessionNdiscount {
+    display: flex;
+    // gap: 117px;
+    justify-content: space-between;
+
+    @media (max-width: 1280px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+
+
+
+}
+
+.heading {
+  padding-left: 80px;
+}
+
+.session_h4 {
+  height: 26px;
+  //  border: 2px solid red;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100.8%;
+  margin-bottom: 30.5px;
+  letter-spacing: 0.005em;
+  color: #222222;
+}
+
+@media (max-width: 950px) {
+  .heading {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .session_h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  .sessionNdiscount {
+    gap: 10px !important;
+    flex-direction: column;
+  }
+}

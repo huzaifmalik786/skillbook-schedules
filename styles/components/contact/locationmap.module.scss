@@ -1,0 +1,59 @@
+.contact_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 69px;
+  padding: 58px 44px;
+  background-color: #f6f6f6;
+
+  .map {
+    .heading {
+      font-family: var(--font-inter);
+      color: #fb614c;
+      font-weight: 600;
+      padding-left: 34px;
+    }
+    .image{
+      width: 100%;
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .message_form {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact_wrapper {
+    padding: 21px 0px;
+    display: flex;
+    flex-direction: column;
+    .map {
+      .heading {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 139%;
+        align-items: center;
+        letter-spacing: -0.03em;
+        padding: 0;
+        padding: 0 16px;
+      }
+      img {
+        width: 93vw;
+        height: 33vh;
+      }
+    }
+    .message_form {
+      // width: 28.6%;
+      @media (max-width: 950px) and (min-width: 550px) {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}

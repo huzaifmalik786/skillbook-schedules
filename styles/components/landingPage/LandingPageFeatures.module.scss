@@ -1,0 +1,227 @@
+.LandingPageFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  .mobile {
+    @media (min-width: 951px) {
+      display: none !important;
+    }
+  }
+
+  .desktop {
+    @media (max-width: 950px) {
+      display: none !important;
+    }
+  }
+
+  .video_container {
+    position: relative;
+    border-radius: 20px;
+
+    @media (max-width: 950px) {
+      width: 100%;
+      height: auto;
+    }
+
+    .ad {
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .play_btn {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media (max-width: 450px) {
+        width: 11.67vw;
+        height: 11.67vw;
+      }
+    }
+
+    .feature {
+      .best_seller {
+        display: flex;
+        border-radius: 4px;
+        padding: 6px;
+        align-items: center;
+        left: 3%;
+        top: 5%;
+        position: absolute;
+        background: #eec65e;
+        border-radius: 4px;
+        font-size: 12px;
+
+        text-transform: uppercase;
+      }
+
+      .icon {
+        object-fit: contain;
+        right: 1%;
+        top: 2%;
+        position: absolute;
+        margin-right: 6px;
+        margin-left: 0px;
+        float: left;
+        align-items: center;
+      }
+    }
+  }
+
+
+  .startingPrices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    // width: 240px;
+    height: 33px;
+    // padding-top: 24px;
+
+    @media (max-width: 950px) {
+      margin-top: 0px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    p {
+      @media (max-width: 950px) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .discount_price {
+      color: #FB5741;
+      font-weight: 600;
+      font-size: 32px;
+
+      @media (max-width: 550px) {
+        font-size: 24px;
+      }
+    }
+
+    .price {
+      color: #383838;
+      padding-right: 8px;
+    }
+
+    .strikeOut {
+      text-decoration: line-through;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 139%;
+    }
+
+    .highlighted {
+      font-size: 36px;
+      font-family: var(--font-manrope);
+    }
+  }
+
+  .early_bid {
+    @media (min-width: 951px) {
+      display: none;
+    }
+
+    background-color: #f4fdf8;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10001;
+    padding: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    // border: 2px solid red;
+    .highlighted_heading {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 139%;
+      text-align: center;
+      letter-spacing: -0.03em;
+
+      .colored {
+        color: #fb5741;
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      padding: 14px 24px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 140%;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background: #fb5741;
+      color: #ffffff;
+      border-radius: 4px;
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+
+    // border: 1px solid red;
+    span {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 139%;
+      letter-spacing: -0.03em;
+      color: #383838;
+      height: 33px;
+
+      background: #ececec;
+      border-radius: 4px;
+
+      padding: 2px 8px;
+    }
+
+    // .best_seller {
+    //   background: #eec65e;
+    //   border-radius: 4px;
+    //   width: 90px;
+    //   height: 27px;
+    //   font-size: 12px;
+    //   font-weight: 500;
+    //   // letter-spacing: 0.005em;
+    //   text-transform: uppercase;
+    // }
+    // .icon {
+    //   margin-right: 6px;
+    //   margin-left: 0px;
+    //   float: left;
+    //   align-items: center;
+    //   opacity: 0.5;
+    // }
+  }
+}

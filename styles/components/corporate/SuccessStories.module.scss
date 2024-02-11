@@ -1,0 +1,132 @@
+.SuccessStories {
+  max-width: 1440px;
+  display: flex;
+  background-color: black;
+  padding: 0 80px;
+  margin: 0 auto;
+  .left {
+    flex:1;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    .line_1 {
+      color: #fd464a;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+    }
+    .line_2 {
+      color: white;
+      max-width: 650px;
+      letter-spacing: -0.025em;
+      padding-right: 70px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 36px;
+      letter-spacing: -0.025em;
+      margin-top: 7px;
+    }
+    .line_3 {
+      color: white;
+      margin-top: 14px;
+      max-width: 560px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: -0.025em;
+    }
+  }
+  .icons_wrapper {
+    flex: 1.1;
+    justify-content: left;
+    // text-align: left;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-width: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    // padding-left: 67.91px;
+    row-gap: 10px;
+    column-gap: 20px;
+    // padding-right: 61.6px;
+    // margin-left: 50px;
+    .logo {
+      width: 60px;
+      height: auto;
+      // aspect-ratio: 3/2;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .SuccessStories {
+    padding: 25px 16px 11px;
+    flex-direction: column;
+
+    .left {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      text-align: center;
+
+      .line_1 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+      }
+      .line_2 {
+        font-weight: 700;
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 126.6%;
+        width: 85%;
+        padding: 0;
+        margin: auto;
+      }
+
+      .line_3 {
+        font-weight: 400;
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        line-height: 140%;
+        padding-top: 5px;
+      }
+    }
+    .icons_wrapper {
+      width: 100%;
+      max-width: 100%;
+      margin: 20px 0 0;
+      padding: 0;
+      column-gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+  .SuccessStories {
+    width: 80%;
+    margin: auto;
+    .left {
+      .line_1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      .line_2 {
+        font-size: 21px;
+      }
+    }
+    .icons_wrapper {
+      place-items: center;
+      column-gap: 0;
+      // .logo {
+      //   width: 70%;
+      // }
+    }
+  }
+}

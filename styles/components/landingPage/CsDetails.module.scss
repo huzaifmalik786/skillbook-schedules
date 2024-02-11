@@ -1,0 +1,112 @@
+.cs_div {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    padding: 11px 16px;
+  }
+
+  .cs_details {
+    margin-bottom: 60px;
+    font-family: var(--font-inter);
+    font-style: normal;
+    .cs_desc {
+      width: 64%;
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 139%;
+      letter-spacing: -0.03em;
+      color: #555555;
+
+      @media (max-width: 950px) {
+        width: auto;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .cs_desc_title {
+      font-family: var(--font-manrope);
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 139%;
+      letter-spacing: -0.03em;
+      color: #222222;
+
+      @media (max-width: 950px) {
+        font-size: 20px;
+        line-height: 27px;
+        line-height: normal;
+      }
+    }
+  }
+
+  .bar {
+    background-color: black;
+    padding-top: 37px;
+    padding-bottom: 42px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 2px 43px rgba(115, 115, 115, 0.11);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-left: 14%;
+    padding-right: 10%;
+    gap: 24px;
+    // margin-top: 120px;
+
+    @media (max-width: 950px) {
+      padding: 20px 15px 20px;
+      flex-direction: column;
+      border-radius: 8px;
+    }
+
+    .orange {
+      color: #fb614c;
+    }
+    .line_1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: white;
+
+      @media (max-width: 950px) {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+      }
+    }
+    .line_2 {
+      font-size: 15px;
+      color: white;
+
+      @media (max-width: 950px) {
+        font-weight: 500;
+        font-size: 14 px;
+        line-height: 120%;
+        text-align: center;
+        padding-top: 10px;
+      }
+    }
+    .bar_img {
+      width: 195px;
+      height: 87px;
+      object-fit: contain;
+    }
+  }
+}
+@media (max-width: 950px) and (min-width: 550px) {
+  .cs_div {
+    .cs_details {
+      .cs_desc_title {
+        font-size: 23px;
+      }
+      .cs_desc {
+        font-size: 16px;
+      }
+    }
+  }
+}

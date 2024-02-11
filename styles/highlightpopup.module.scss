@@ -1,0 +1,102 @@
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .section {
+        position: relative;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #e6e6e6;
+        border-radius: 12px;
+        width: 800px;
+        height: 550px;
+
+        // height: fit-content;
+        .header {
+            position: absolute;
+            width: 100%;
+            top: 12px;
+            right: 12px;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                background: none;
+                width: fit-content;
+            }
+        }
+
+        @media (max-width: 800px) {
+            width: 95%;
+            height: fit-content;
+            padding: 26px 0;
+            height: 450px;
+        }
+
+        @media (max-width: 650px) {
+            height: auto;
+            padding: 30px 16px;
+        }
+
+        .prev {
+            position: absolute;
+            left: 8px;
+            top: 45%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .next {
+            position: absolute;
+            right: 8px;
+            top: 45%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                fill: #000;
+            }
+        }
+
+        .image_container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 90%;
+                height: auto;
+
+                @media (max-width: 650px) {
+                    width: 100%;
+                }
+
+                @media (min-width: 650px) {
+                }
+            }
+        }
+    }
+
+
+    .modal {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

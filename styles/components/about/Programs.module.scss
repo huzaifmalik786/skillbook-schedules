@@ -1,0 +1,173 @@
+.programs {
+  background-color: black;
+  padding-left: 102px;
+  padding-top: 34px;
+  padding-bottom: 37px;
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    padding: 30px 16px;
+  }
+
+  .left {
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      height: 42px;
+      font-size: 14px;
+
+      @media (max-width: 950px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .heading {
+    line-height: 100.8%;
+    letter-spacing: 0.005em;
+    color: hsl(0, 0%, 100%);
+    margin-top: 42px;
+
+    @media (max-width: 950px) {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 126.6%;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  p {
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    width: 485px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    color: white;
+
+    @media (max-width: 950px) {
+      width: auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 139%;
+      text-align: center;
+    }
+  }
+
+  button {
+    padding: 17px 15px;
+    background: #FD464A;
+    font-weight: 600;
+    color: white;
+
+    @media (max-width: 950px) {
+      border-radius: 4px;
+      justify-content: center;
+    }
+  }
+
+  .TrendingCourses {
+    .card_heading {
+      color: black;
+
+      @media (max-width: 950px) {
+        text-align: left;
+      }
+    }
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 42px;
+    width: 285px;
+    padding-right: 27px;
+    padding-left: 27px;
+    margin-right: 44px;
+    margin-left: 63px;
+    height: min-content;
+
+    @media (max-width: 950px) {
+      margin: auto;
+      margin-top: 50px;
+      width: 99%;
+    }
+
+    .Course {
+      // border: 1px solid red;
+      display: flex;
+      gap: 4px;
+      padding: 8px;
+      width: 250px;
+      height: 44px;
+      font-size: 12px;
+      align-items: center;
+      background-color: #f1f0f0;
+      font-weight: 700;
+      border-radius: 8px;
+      width: 231px;
+
+      p {
+        font-weight: 700;
+        color: #000;
+
+        font-size: 12px;
+
+        line-height: 17px;
+        letter-spacing: -0.03em;
+        text-align: left;
+      }
+
+      @media (max-width: 950px) {
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 139%;
+        width: 287px;
+      }
+
+      @media (max-width: 450px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .Card1 {
+    background-color: white;
+    margin-top: 42px;
+
+    @media (max-width: 950px) {}
+
+    .tile1 {
+      background-color: #f1f0f0;
+    }
+  }
+
+  .Card2 {
+    background-color: #fff9f1;
+
+    @media (max-width: 950px) {
+      background: white;
+    }
+
+    // ---------------------------------------------------------
+    .tile2 {
+      background-color: #ffeeda;
+    }
+  }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+  .programs {
+    .left {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

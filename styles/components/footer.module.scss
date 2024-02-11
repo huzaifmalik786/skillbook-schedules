@@ -1,0 +1,589 @@
+.footer {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.85);
+  padding-top: 22px;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .btn {
+    background: black;
+    border: 2px solid grey;
+    justify-content: center;
+    padding: 13px 0;
+    margin-top: 22px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 9.5px 11.5px;
+    background-color: #fb614c;
+    color: white;
+    letter-spacing: -0.03em;
+
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 139%;
+
+    @media (max-width:950px) {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 139%;
+      letter-spacing: -0.03em;
+    }
+  }
+
+
+  .row_Mobile {
+    display: flex;
+    gap: 60px;
+
+    // border: 1px solid red;
+    @media (max-width: 1100px) {
+      gap: 6px;
+    }
+  }
+
+  .row_Mobile_2 {
+    display: grid;
+    // border: 1px solid blue ;
+  }
+
+  .row_1 {
+    // border: 1px solid blue ;
+
+    display: grid;
+    grid-template-columns: 2.7fr 0.9fr 1.9fr 1.9fr 0.8fr;
+    margin: 0px 80px;
+    padding: 0px 0px 36px 0px;
+
+    @media (max-width: 1100px) {
+      margin: 0;
+      padding: 11px 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact_col{
+      display: flex;
+      .social_icons{
+        gap: 16px !important;
+        .social_icon{
+          min-width: 35px;
+        }
+      }
+    }
+
+    .col_1 {
+
+      .social_icons {
+        padding-top: 27px;
+        padding-bottom: 41.15px;
+        display: flex;
+        gap: 27px;
+
+        @media (max-width: 950px) {
+          padding-bottom: 10px;
+        }
+
+        // border: 1px solid red;
+
+        .social_icon {
+          width: 100%;
+          object-fit: contain;
+          aspect-ratio: 1/1;
+        }
+      }
+    }
+
+    .payment_methods {
+      .contact_chip{
+        background: #FFEEDA;
+        padding: 6px;
+        border-radius: 6px;
+        color: black !important;
+      }
+      .contact_chip2 {
+        font-family: var(--font-manrope);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: -0.03em;
+        width: fit-content;
+        // text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .methods {
+        display: flex;
+        gap: 11px;
+        padding-top: 14px;
+      }
+    }
+
+    .ssl_secure {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding-top: 14px;
+
+      .highlighted_heading {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 13px;
+        letter-spacing: 0.2800000011920929px;
+
+        color: rgba(255, 255, 255, 0.85);
+
+        span {
+          color: #00b67a;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 13px;
+          letter-spacing: 0.2800000011920929px;
+        }
+      }
+    }
+
+    .col_2 {
+      padding-top: 18px;
+      align-items: flex-end;
+
+      .contact_badge {
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        background-color: #ffeeda;
+        padding: 5px 10px;
+        color: black;
+        border-radius: 6px;
+
+        @media (max-width: 950px) {
+          padding: 10px;
+        }
+      }
+    }
+
+    .col_3,
+    .col_4 {
+      padding-top: 18px;
+
+      .heading {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #fb5741;
+        padding-bottom: 5px;
+
+        @media (max-width: 950px) {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 139%;
+        }
+      }
+
+      .phone {
+        display: flex;
+        gap: 8px;
+        padding-top: 16px;
+
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.85);
+
+          @media (max-width: 950px) {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        .flag_img {
+          object-fit: cover;
+          aspect-ratio: 2/1;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
+
+  .all_courses {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    margin: 0px 80px;
+    padding: 25px 0px 36px 0px;
+
+    border-top: 1px solid rgba(130, 130, 130, 0.3);
+    border-bottom: 1px solid rgba(130, 130, 130, 0.3);
+
+    @media (max-width: 950px) {
+      padding: 21px 16px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .svg_mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .our_courses,
+    .our_company,
+    .our_resources {
+      @media (max-width: 950px) {
+        padding-bottom: 20px;
+      }
+    }
+
+    .our_courses {
+      .courses {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    }
+
+    .our_courses,
+    .our_company,
+    .our_resources {
+      .heading {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+
+    .list {
+      display: grid;
+    }
+
+    .courses,
+    .list {
+      padding-top: 12px;
+      gap: 12px;
+
+      p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 15px;
+        // font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -3%;
+      }
+    }
+  }
+
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 80px 40px 80px;
+
+    @media (max-width: 950px) {
+      padding: 20px 16px;
+    }
+
+    button {
+      font-family: var(--font-manrope);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.03em;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      background-color: transparent;
+      padding: 10px 38px;
+      border: 1px solid #cccccc;
+    }
+
+    p {
+      font-family: var(--font-manrope);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: -0.03em;
+      text-align: center;
+      color: #dbdbdb;
+
+      @media (max-width: 950px) {
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+
+    .email_signup {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: 950px) {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .email_input {
+        height: 38px;
+        display: flex;
+        align-items: center;
+   
+        // width: 323px;
+
+
+        @media (max-width: 950px) {
+          background-color: transparent;
+          border: 1px solid white;
+          border-radius: 6px;
+          width: 100%;
+          height: auto;
+          /* justify-content: end; */
+          position: relative;
+        }
+
+        input {
+          height: 37px;
+          width: 236px;
+          background-color: transparent;
+          border: 1px solid #808080;
+          border-radius: 6px 0px 0px 6px;
+          color: white;
+          padding: 7px;
+
+          @media (max-width: 950px) {
+            height: auto;
+            /* width: auto; */
+            border: none;
+            border-radius: 6px;
+            height: 42px;
+            /* width: 100%; */
+            color: white;
+            padding-left: 10px;
+            width: 100%;
+          }
+
+          &::placeholder {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            // color: #fff;
+          }
+        }
+
+        button {
+          height: 38px;
+          //   width: 87px;
+          border-radius: 0px 6px 6px 0;
+          border: none;
+          font-family: var(--font-inter);
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: white;
+          padding: 10.5px 18.5px;
+          background-color: #51b37f;
+
+          @media (max-width: 950px) {
+            height: 42px;
+            align-self: center;
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    border: 1px solid #fff;
+    opacity: 0.4;
+    padding-left: 0;
+  }
+
+  .policies_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 80px 38px 80px;
+
+    @media (max-width: 950px) {
+      padding: 41px 16px;
+      justify-content: center;
+    }
+
+    p {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-decoration: underline;
+
+      @media (max-width: 950px) {
+        font-size: 12px;
+        color: #ffffffcb;
+        text-decoration: none;
+      }
+    }
+
+    .policy_links {
+      display: flex;
+      align-items: center;
+      gap: 79px;
+
+      @media (max-width: 950px) {
+        display: none;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.payment_methods {
+  .contact_chip2 {
+    font-family: var(--font-manrope);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    // text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .methods {
+    display: flex;
+    gap: 11px;
+    padding-top: 14px;
+
+    img {
+      @media (max-width: 950px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ssl_secure {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-top: 14px;
+
+  .highlighted_heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.2800000011920929px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    span {
+      color: #00b67a;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 13px;
+      letter-spacing: 0.2800000011920929px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .footer {
+    .payment_methods_mobile {
+      .chip {
+        font-family: var(--font-manrope);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .methods {
+        display: flex;
+        gap: 11px;
+        padding-top: 14px;
+        // border: 1px solid red;
+
+        img {
+          @media (max-width: 950px) {
+            width: 100%
+          }
+
+          @media (max-width: 950px) {
+            width: 50px
+          }
+        }
+      }
+    }
+  }
+
+  .refer_btn_dx {
+    display: none;
+  }
+
+  .payment_methods {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+  }
+}
+
+@media (min-width: 950px) {
+  .svg_for_mobile {
+    display: none;
+  }
+
+  .payment_methods_mobile {
+    display: none;
+  }
+}
+
+.ssl_secure_mobile {
+  display: none;
+}
+
+.policy{
+  @media (min-width: 951px) {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+.learn_wrapper {
+  background-color: #fff9f1;
+  padding: 40px 0px 40px 113px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  // grid-template-columns: 1fr 1fr;
+  // place-content: end;
+
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 16px;
+  }
+
+  .learn {
+    flex: 1;
+
+    .heading {
+      margin-bottom: 24px;
+
+      @media (max-width: 950px) {
+        text-align: center;
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+      color: #363636;
+
+      @media (max-width: 950px) {
+        gap: 24px;
+      }
+
+      .point {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: 950px) {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+        }
+
+        .check {
+          background-color: #fb5741;
+          border-radius: 6.54545px;
+          height: 24px;
+          width: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+
+        .bold_content {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .learn_carousel {
+    flex: 1;
+    margin-top: 50px;
+  }
+}

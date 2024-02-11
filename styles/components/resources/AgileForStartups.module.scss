@@ -1,0 +1,72 @@
+.AgileForStartups{
+    padding-left:80px;
+    padding-top:32px;
+    
+    h3{
+        margin-bottom: 32px;
+    }
+    
+    .views{
+        
+        display: flex;
+        gap: 7px;
+        .RatingText{
+            font-weight: 500;
+            color:#949494;
+        }
+    }
+    .topics{
+        display: flex;
+        gap:16px;
+        align-items: center;
+        p{
+            font-weight: 700;
+            color:#FF792B
+        }
+        .topic{
+            padding: 8px 12px;
+            border-radius: 4px;
+            color:white;
+            font-weight: 800;
+        }
+        
+        .scrum{
+            background-color: #0E3B65;
+        }
+        .agile{
+            background-color: #FF5E00;
+        }
+        .Startup{
+            background-color: #333835;
+        }
+    }
+    .lower{
+        margin-top:44px;
+        text-align: justify;
+        letter-spacing: -0.015em;
+        .left{
+            width: 870px;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        ul{
+            p:before{ content:"•"; font-size:8pt; }
+        }
+        .author{
+            margin-top:48px;
+        }
+        
+        .connect{
+            display: flex;
+            margin-top:16px;
+            // justify-content: center;
+            align-items: center;
+                .tile{
+                    padding: 20px 22px;
+                }
+            
+        }
+    }
+    
+}   

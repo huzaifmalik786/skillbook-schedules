@@ -1,0 +1,125 @@
+.search_filter {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0px;
+
+  .filter {
+    display: flex;
+    gap: 12px;
+
+    .btn {
+      width: 120px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      background-color: #e4e4e4;
+      border-radius: 4px;
+      color: #878787;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      border: 1px solid #DFDFDF;
+    }
+
+    .active {
+      background: #1c466d;
+      color: white;
+    }
+  }
+
+  .search_input {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #20484f;
+    border-radius: 8px;
+
+    input {
+      height: 45px;
+      width: 410px;
+      background-color: transparent;
+      border: 1px solid #808080;
+      border-radius: 6px 0px 0px 6px;
+      padding: 11px 0px 11px 23px;
+      border: none;
+      font-size: 15px;
+      line-height: 139%;
+      letter-spacing: -0.03em;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: rgba(32, 72, 79, 0.2);
+      }
+    }
+
+    .search_btn {
+      height: 45px;
+      border-radius: 0px 8px 8px 0;
+      border: none;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0em;
+      color: white;
+      padding: 16px 36px;
+      border-top: 1px solid #20484f;
+      border-bottom: 1px solid #20484f;
+      background-color: #fd464a;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .search_filter {
+    padding: 20px 16px;
+    flex-direction: column;
+    width: 100%;
+
+    .filter {
+      padding-bottom: 20px;
+      width: 100%;
+      overflow-x: scroll;
+      justify-content: center;
+      @media (max-width: 550px) {
+        justify-content: flex-start;
+      }
+
+      .btn {
+        padding: 9px 34px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 120%;
+        width: auto;
+        height: auto;
+      }
+    }
+
+    .search_input {
+      border: 2px solid #20484f;
+      border-radius: 4px;
+      width: 100%;
+      justify-content: space-between;
+
+      input {
+        // width: auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .search_btn {
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.ReferralForm {
+  padding: 61px 144px 84px 100px;
+  background: #f4fdf8;
+  border-radius: 8px;
+  display: flex;
+  // gap: 192px;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: -5% auto 0 auto;
+  .left {
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 85px;
+      width: 500px;
+      .point {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #0e3b65;
+
+          padding: 16px;
+          border-radius: 4px;
+        }
+        .main {
+          color: #fd464a;
+          line-height: 139%;
+          margin-bottom: 12px;
+        }
+        .desc {
+          line-height: 139%;
+          color: #555555;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 416px;
+    .inputbox {
+      padding: 14px 0px 14px 16px;
+      letter-spacing: -0.008em;
+      color: #505050;
+      border: 1px solid #bcbcbc;
+      border-radius: 4px;
+      background: #f4fdf8;
+    }
+    .submitBtn {
+      padding: 16px;
+      background: #fb614c;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #ffffff;
+      text-align: center;
+      width: 181px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .ReferralForm {
+    padding: 30px 24px;
+    position: unset;
+    z-index: 1;
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    .left {
+      .points {
+        gap: 60px;
+        width: 100%;
+        .point {
+          gap: 0;
+          h4 {
+            margin-right: 22px;
+            align-self: flex-start;
+          }
+          .icon {
+            padding: 10px;
+            margin-right: 15px;
+            color: transparent;
+            align-self: baseline;
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+          .main {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 139%;
+            letter-spacing: -0.03em;
+            margin-bottom: 5px;
+          }
+          .desc {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 139%;
+            letter-spacing: -0.03em;
+          }
+        }
+      }
+      svg {
+        line {
+          stroke: #0e3b65 !important;
+        }
+      }
+    }
+    .right {
+      width: auto;
+    }
+  }
+}

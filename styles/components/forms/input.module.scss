@@ -1,0 +1,40 @@
+.input_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #bebdbd;
+  border-radius: 4px;
+
+  input,
+  textarea {
+    font-size: 15px;
+    line-height: 139%;
+    letter-spacing: -0.03em;
+    color: #929191;
+    border: 1px solid #bebdbd;
+    padding: 14px 14px 14px 16px;
+    border-radius: 4px;
+    outline: none;
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    resize: none;
+  }
+
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .input_container {
+
+    input,
+    textarea {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.008em;
+    }
+  }
+}

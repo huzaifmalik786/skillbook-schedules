@@ -1,0 +1,97 @@
+.coursesWrapper {
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: white;
+  z-index: 10004;
+  overflow-y: scroll;
+  flex-direction: column;
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #fcf0df;
+    img {
+      width: 175px;
+    }
+    svg {
+      cursor: pointer;
+    }
+  }
+  .courseHeading {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    // background: rgb(249 249 249);
+    height: 100px;
+    .courseHeadingItem {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .headingItem {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #222222;
+        svg {
+          cursor: pointer;
+        }
+      }
+      .headingContents {
+        display: flex;
+        padding: 15px 16px;
+        background: white;
+        border-radius: 4px;
+        align-items: center;
+        .img_wrapper {
+          width: 46px;
+          height: 46px;
+          background: #fcf0df;
+          border-radius: 4.38095px;
+          //   padding: 5px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 126%;
+          margin-left: 7px;
+          gap: 10px;
+          flex: 1;
+          .contentDesc {
+            display: flex;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 139%;
+            letter-spacing: -0.03em;
+            color: #555555;
+            justify-content: space-between;
+            align-items: center;
+            button {
+              background: #ffffff;
+              border: 1px solid #d6d6d6;
+              border-radius: 4px;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 139%;
+              letter-spacing: -0.03em;
+              padding: 3px 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.errorPage {
+	background-color: #e7e4d7;
+	border: 1px solid #e7e4d7;
+	height: 100vh;
+
+	html,
+	body,
+	p,
+	ol,
+	ul,
+	li,
+	dl,
+	dt,
+	dd,
+	blockquote,
+	figure,
+	fieldset,
+	legend,
+	textarea,
+	pre,
+	iframe,
+	hr,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: 100%;
+		font-weight: normal;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	button,
+	input,
+	select {
+		margin: 0;
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
+	}
+
+	img,
+	video {
+		height: auto;
+		max-width: 100%;
+	}
+
+	iframe {
+		border: 0;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	td,
+	th {
+		padding: 0;
+	}
+
+	body {
+		min-height: 100vh;
+		background-color: #e7e4d7;
+		color: #455a64;
+		font-family: var(----font-raleway), sans-serif;
+	}
+
+	header {
+		margin: 0 auto;
+		padding: 1.5rem;
+		max-width: 1440px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #ff725e;
+	}
+
+	.navbar {
+		z-index: 999;
+		position: sticky;
+		height: 8vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	main {
+		min-height: 75vh;
+		padding: 3rem 1.5rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	article {
+		max-width: 35rem;
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	span {
+		display: block;
+		font-weight: 600;
+		font-size: 1.5rem;
+		color: #455a64;
+	}
+
+	p {
+		font-size: 1rem;
+		text-align: justify;
+		margin-bottom: 1rem;
+	}
+
+	button {
+		color: #ff725e;
+		background-color: #455a64;
+		border: 2px solid #455a64;
+		vertical-align: middle;
+		padding: 1rem 2.5rem;
+		border-radius: 0.4rem;
+		cursor: pointer;
+		font-weight: 700;
+		margin-top: 3rem;
+
+		&:hover {
+			background: transparent;
+			transition: 0.5s ease-in-out;
+			color: #455a64;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.errorPage {
+		height: 100vh;
+
+		button {
+			margin-top: 0;
+		}
+	}
+}

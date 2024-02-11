@@ -1,0 +1,154 @@
+.Sessions {
+    .timeLine {
+      padding-top: 26px;
+      display: flex;
+      gap: 12px;
+      
+      button {
+        padding: 4.5px 11px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #766969;
+        background: #e4e4e4;
+        border-radius: 4px;
+      }
+    }
+    .columnNames {
+      padding: 21px;
+      display: grid;
+      grid-template-columns: 85px 120px 162px 108px 114px;
+      column-gap: 53px;
+      p {
+        font-weight: 600;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+      }
+      .calendar{
+        border-radius: 100%;
+        background-color: #766969;
+      }
+    }
+    .bars {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .session {
+        background-color: #0E3B65;
+        width: 811px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dfdfdf;
+        border-radius: 7px;
+        .row {
+          display: flex;
+          justify-content: space-around;
+          padding: 14px 0px 22px 0px;
+          color: white;
+          .schedule {
+            position: relative;
+            width: 85px;
+            height: 69px;
+            background-color: white;
+            // color: white;
+            display: flex;
+            padding: 8px 12px;
+            border-radius: 6px;
+            gap: 9px;
+            h6 {
+              color: white;
+            }
+            .months {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+  
+              .month {
+                color: white;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+              }
+            }
+            .note {
+              position: absolute;
+              top: 58px;
+              left: 7px;
+              z-index: 99;
+              background: #dcf2ed;
+              border: 0.5px solid #aeaeae;
+              border-radius: 3px;
+              padding: 0px 10px;
+              p {
+                font-size: 12px;
+                color: #555555;
+                font-weight: 600;
+              }
+            }
+          }
+          .timing {
+            p {
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 139%;
+              letter-spacing: -0.03em;
+              color: white;
+            }
+            .days {
+              margin-top: 4px;
+            }
+          }
+          .course {
+            width: 158px;
+            p {
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 139%;
+              letter-spacing: -0.03em;
+              color: white;
+            }
+          }
+          .price {
+            .cancelled {
+              line-height: 139%;
+              font-style: normal;
+              font-weight: 400;
+            }
+          }
+          .register {
+            margin-left: 22px;
+            color: white;
+            background-color: var(--main_color);
+            font-weight: bold;
+            padding: 12px 17px;
+            font-size: 12px;
+            border-radius: 4px;
+          }
+          .text {
+            margin-top: 8px;
+            color: white ;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 139%;
+          }
+        }
+      }
+    }
+    .schedule_btn {
+      margin-left: 629px;
+      margin-top: 13px;
+      right: 0%;
+      padding: 14px 18px 13px 18px;
+      background: #fb5741;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  

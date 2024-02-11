@@ -1,0 +1,83 @@
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff9f1;
+  padding: 27px 0px 27px 80px;
+
+  @media (max-width: 950px) {
+    padding: 11px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SAFe {
+    width: 82%;
+
+    .heading {
+      @media (max-width: 950px) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100.8%;
+      }
+    }
+
+    @media (max-width: 950px) {
+      width: auto;
+    }
+
+    .para1 {
+      letter-spacing: 0.005em;
+      line-height: 18px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 16px;
+
+      @media (max-width: 950px) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+    .para2 {
+      letter-spacing: 0.005em;
+
+      @media (max-width: 950px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+    .link {
+      color: #fb614c;
+      margin-top: 42.75px;
+      display: flex;
+      gap: 10px;
+      text-decoration: underline;
+      align-items: center;
+
+      .txt {
+        @media (max-width: 950px) {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      @media (max-width: 950px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .roadmap_img {
+    place-self: center;
+
+    img {
+      @media (max-width: 950px) {
+        width: 100%;
+      }
+    }
+  }
+}

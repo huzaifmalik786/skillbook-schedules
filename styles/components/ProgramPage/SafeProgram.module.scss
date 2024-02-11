@@ -1,0 +1,53 @@
+.SafeProgram {
+  background-color: #ffeeda;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 47px;
+  padding: 40px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  .right {
+    width: 85%;
+    .heading {
+      margin-bottom: 36px;
+      font-family: var(--font-manrope);
+    }
+    p {
+      line-height: 139%;
+      letter-spacing: -0.03em;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .SafeProgram {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 16px;
+    gap: 30px;
+    .right {
+      width: auto;
+      .heading {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+  .SafeProgram {
+    gap: 30px;
+  }
+}

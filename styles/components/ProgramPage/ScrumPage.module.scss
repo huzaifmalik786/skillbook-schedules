@@ -1,0 +1,50 @@
+.ScrumProgram {
+  background-color: #f4fdf8;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 47px;
+  padding: 40px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  .left {
+    display: flex;
+    flex-direction: column;
+    // gap:24px;
+    .heading {
+      margin-bottom: 36px;
+      font-family: var(--font-manrope);
+    }
+    p {
+      line-height: 139%;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .ScrumProgram {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+    .left {
+      width: auto;
+      .heading {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.03em;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

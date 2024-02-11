@@ -1,0 +1,146 @@
+.Prerequisite {
+  padding: 0px 80px;
+  padding-top: 40px;
+  padding-bottom: 89px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 16px;
+  }
+
+  background-color: #fff9f1;
+
+  .orange {
+    color: var(--main_color);
+    font-weight: 700;
+  }
+
+  .left {
+    width: 443px;
+
+    @media (max-width: 950px) {
+      width: auto;
+    }
+
+    .title_left {
+      color: #fb5741;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fb5741;
+
+      @media (max-width: 950px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+      }
+    }
+
+    .heading {
+      line-height: 100.8%;
+      letter-spacing: 0.005em;
+      width: 425px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      @media (max-width: 950px) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        margin-top: 5px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 140%;
+
+      @media (max-width: 950px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+      }
+    }
+  }
+
+  .right {
+    width: 480px;
+    // height: 24px;
+
+    @media (max-width: 950px) {
+      width: auto;
+      height: auto;
+      padding-top: 20px;
+    }
+
+    .title_right {
+      width: 377px;
+      font-family: var(--font-manrope);
+      margin-bottom: 17.5px;
+
+      @media (max-width: 950px) {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100.8%;
+        width: auto;
+      }
+    }
+
+    p {
+      font-size: 15px;
+
+      @media (max-width: 950px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-right: 96px;
+
+      @media (max-width: 950px) {
+        padding: 0;
+      }
+
+      .point {
+        display: flex;
+        gap: 13px;
+
+        @media (max-width: 950px) {}
+
+        .check {
+          background-color: #fb5741;
+          border-radius: 6.54545px;
+          height: 24px;
+          width: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+
+          @media (max-width: 950px) {}
+        }
+
+        .check_mark {
+          background-color: #fb5741;
+        }
+      }
+    }
+  }
+}

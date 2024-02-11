@@ -1,0 +1,181 @@
+.dropdown {
+  .dropbtn {
+    padding: 13.5px 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #fb5741;
+    margin-bottom: 0px;
+    display: flex;
+    position: relative;
+    gap: 12.01px;
+
+    @media (max-width: 950px) {
+      padding: 7px 11px;
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9a9a9a;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #dcdcdc;
+    margin: 25px 0;
+  }
+
+  .pageEffect {
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    width: 100vw;
+    height: 100vh;
+
+    .max {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5vw;
+      // position: relative;
+    }
+  }
+
+  .dropdown_menu {
+    display: flex;
+    top: 10px;
+    position: absolute;
+    z-index: 99;
+    position: relative;
+    height: min-content;
+
+    left: 0;
+    gap: 10px;
+
+    .menu_1 {
+      border-radius: 4px;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+
+      .menu1_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 34px;
+        width: 273px;
+
+        border-bottom: 0.5px solid #e8e8e8;
+
+        .ele_txt {
+          color: #444;
+          font-weight: 600;
+          line-height: 20px;
+        }
+
+        &:hover {
+          border-left: 5px solid #fb5741;
+
+          .ele_txt {
+            font-weight: 700;
+          }
+
+          background: #eeeeee;
+        }
+      }
+    }
+
+    .menu_2 {
+      border-radius: 4px;
+      position: absolute;
+      left: 280px;
+      background-color: white;
+
+      .subCourses {
+        padding: 16px;
+        overflow-y: scroll;
+        max-height: 426px;
+        min-width: 300px;
+        margin-right: 15px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        .subEle {
+          position: relative;
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          width: 312px;
+          padding: 8.5px 14px;
+          border: 1px solid #dadada;
+          border-radius: 8px;
+          gap: 12px;
+          .course_logo{
+            object-fit: contain;
+          }
+
+          .sub_txt {
+            width: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .txt {
+              font-weight: 500;
+              line-height: 126%;
+            }
+
+            span {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .days_txt {
+                font-size: 14px;
+                color: #8a8a8a;
+              }
+
+              .trending {
+                display: flex;
+                font-weight: 500;
+                font-size: 12px;
+                color: #8a8a8a;
+
+                align-items: center;
+                padding: 4px 6px;
+
+                background: #ffffff;
+                border: 1px solid #d6d6d6;
+                border-radius: 4px;
+              }
+            }
+          }
+
+          &:hover {
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            border: 1px solid #fb5741;
+
+            span {
+              .trending {
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+                border: 1px solid #fb5741;
+                color: #fb5741;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+.trusted_wrapper {
+  background-color: var(--bg1);
+  padding: 40px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    padding: 11px 16px;
+    padding-top: 50px;
+  }
+
+  .text_content {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .text_left {
+      @media (max-width: 950px) {
+        text-align: center;
+      }
+
+      .heading {
+        color: #222222;
+        display: flex;
+        align-items: center;
+        letter-spacing: -2.5%;
+
+        @media (max-width: 950px) {
+          font-size: 20px;
+          text-align: center;
+          justify-content: center;
+          line-height: 120%;
+        }
+      }
+
+      .desc {
+        width: 90%;
+        padding-top: 16px;
+        font-size: 16px;
+
+        @media (max-width: 950px) {
+          width: auto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+        }
+      }
+    }
+
+    .text_right {
+      place-items: center;
+      display: flex;
+      gap: 32px;
+
+      @media (max-width: 950px) {
+        gap: 19px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @media (max-width: 450px) {
+        place-items: baseline;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stats {
+        .num {
+          font-weight: 800;
+          line-height: 50.04px;
+          color: #fb5741;
+          // width: 100px;
+
+          @media (max-width: 950px) {
+            width: auto;
+            font-size: 24px;
+            line-height: 120%;
+          }
+        }
+
+        .text {
+          line-height: 19.36px;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  .reviews_carousel {
+    padding-top: 32px;
+    // padding: 0px 80px;
+
+    .review {
+      background-color: black;
+      color: #eaeaea;
+      padding: 32px;
+      height: 254px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+
+      .review_profile {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-start;
+        img{
+          width: auto;
+        }
+
+        .profile {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 4px 0;
+
+          @media (max-width: 950px) {
+            .user_name {
+              font-size: 20px;
+              line-height: 120%;
+            }
+          }
+
+          @media (max-width: 620px) {
+            .user_name {
+              font-size: 16px;
+            }
+          }
+
+          .rating {
+            display: flex;
+            gap: 11px;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2px;
+              font-size: 12px;
+              line-height: 15px;
+              letter-spacing: 0.5%;
+            }
+          }
+        }
+      }
+
+      .review_text {
+        margin-top: 26.5px;
+        height: 100%;
+        font-size: 16px;
+
+        p {
+          line-height: 19px;
+          font-size: 14px;
+          color: #eaeaea !important;
+        }
+      }
+
+      .read_more {
+        align-self: flex-end;
+        background: transparent;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.03em;
+        color: #9a9a9a;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .read_all {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    // padding-right: 38px;
+    align-items: center;
+
+    @media (max-width: 540px) {
+      justify-content: center;
+      padding-right: 0;
+    }
+
+    // border: 1px solid red;
+    // padding: 2px;
+    // height: 35px;
+
+
+    button {
+      background: transparent;
+      font-weight: 500;
+      font-size: 20px;
+      // line-height: 24px;
+      text-decoration-line: underline;
+      margin-right: 10px;
+      margin-top: -5px;
+      color: #222222;
+    }
+  }
+}

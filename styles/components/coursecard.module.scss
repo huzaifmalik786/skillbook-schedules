@@ -1,0 +1,493 @@
+.small_card {
+  width: 240px !important;
+  gap: 11px !important;
+
+  .hover_header {
+
+    .difficulty,
+    .live {
+      font-size: 10px !important;
+      padding: 2.842px 6.263px !important;
+    }
+  }
+
+  .card_content {
+    .heading {
+      .name {
+        font-size: 16px !important;
+      }
+
+      img {
+        width: 39.079px !important;
+        height: 35.361px !important;
+      }
+    }
+
+    .desc {
+      p {
+        font-size: 12px !important;
+        line-height: 139% !important;
+      }
+    }
+  }
+
+  .view_btn {
+    font-size: 12px !important;
+    width: 100%;
+    justify-content: center;
+    padding: 8px 16px !important;
+  }
+}
+
+.course_card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  width: 304px;
+  min-height: 338px;
+  height: fit-content;
+  border: 1px solid #bfc0c0;
+  position: relative;
+
+  @media (max-width: 950px) {
+    margin: auto;
+  }
+
+  .card_img {
+    object-fit: cover;
+    aspect-ratio: 2/1;
+    // position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .card_header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+    width: 302px;
+    top: 135px;
+
+    .difficulty,
+    .live {
+      border-radius: 4px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.03em;
+    }
+
+    .difficulty {
+      background: #0e3b65;
+      padding: 4px 6px;
+    }
+
+    .live {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      background: #ec5858;
+      padding: 5.79px 11px;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        height: 9px;
+        width: 9px;
+        background: white;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+    }
+  }
+
+  .card_content {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 23px 12px 28px 12px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .name {
+        text-align: left;
+
+        @media (max-width: 550px) {
+          font-size: 16px !important;
+          // height: 72px;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+      height: 35px;
+
+      @media (max-width: 550px) {
+        p {
+          font-size: 12px !important;
+          line-height: 139% !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .card_content_1 {
+      display: none;
+    }
+
+    .card_header {
+      display: none;
+    }
+
+    .card_img {
+      display: none;
+    }
+  }
+
+  .hover_text {
+    // position: absolute;
+    display: none;
+    transition: 0.5s;
+  }
+
+  transition: 0.5s;
+
+  &:hover {
+    .hover_text {
+      @media (min-width: 950px) {
+        transition: 0.5s;
+        position: absolute;
+        padding: 18px 12px 26px 12px;
+        top: 0;
+        background-color: #0e3b65;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hover_header {
+        @media (min-width: 950px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .difficulty,
+        .live {
+          @media (min-width: 950px) {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: -0.03em;
+            border-radius: 4px;
+            color: white;
+          }
+        }
+
+        .difficulty {
+          @media (min-width: 950px) {
+            background: #0e3b65;
+            border: 1px solid #c5c5c5;
+            padding: 4px 6px;
+          }
+        }
+
+        .live {
+          @media (min-width: 950px) {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5.79px 11px;
+          }
+
+          p {
+            @media (min-width: 950px) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              height: 9px;
+              width: 9px;
+              background: white;
+              transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+          }
+        }
+      }
+
+      .card_content {
+        @media (min-width: 950px) {
+          color: white !important;
+          padding: 0;
+          padding-top: 8px;
+        }
+      }
+    }
+
+    .labels {
+      @media (min-width: 950px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .label {
+        @media (min-width: 950px) {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          background: #fcf0df;
+          border-radius: 2px;
+          color: #787878;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: -0.03em;
+          text-align: left;
+          padding: 4px 6px;
+        }
+      }
+    }
+
+    .reviews {
+      @media (min-width: 950px) {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      span {
+        @media (min-width: 950px) {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          background: #ffffff;
+          border-radius: 4px;
+          padding: 2px 2px;
+        }
+
+        .logo_icon {
+          @media (min-width: 950px) {
+            aspect-ratio: 1/1;
+            object-fit: contain;
+          }
+        }
+      }
+
+      p {
+        @media (min-width: 950px) {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: -0.03em;
+          text-align: left;
+          color: white;
+        }
+      }
+    }
+
+    .view {
+      @media (min-width: 950px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+        text-decoration: underline;
+        color: white;
+        padding-bottom: 20px;
+      }
+    }
+
+    .view_btn {
+      @media (min-width: 950px) {
+        gap: 10px;
+        background-color: white;
+        outline: 2px solid #fb5741;
+        color: #fb5741;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+        padding: 8.5px 72px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .hover_text {
+    @media (max-width: 950px) {
+      transition: 0.5s;
+      // position: absolute;
+      padding: 18px 12px 26px 12px;
+      top: 0;
+      background-color: white;
+      height: 100%;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hover_header {
+      @media (max-width: 950px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .difficulty,
+      .live {
+        @media (max-width: 950px) {
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 17px;
+          letter-spacing: -0.03em;
+          border-radius: 4px;
+          color: white;
+        }
+      }
+
+      .difficulty {
+        @media (max-width: 950px) {
+          background: #0e3b65;
+          border: 1px solid #c5c5c5;
+          padding: 4px 6px;
+        }
+      }
+
+      .live {
+        @media (max-width: 950px) {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 5.79px 11px;
+          color: white;
+          background: #222222;
+        }
+
+        p {
+          @media (max-width: 950px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 9px;
+            width: 9px;
+            background: white;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+          }
+        }
+      }
+    }
+
+    .card_content {
+      @media (max-width: 950px) {
+        color: white;
+        padding: 0;
+        padding-top: 8px;
+        color: #2f2f2f;
+      }
+    }
+  }
+
+  .labels {
+    @media (max-width: 950px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .label {
+      @media (max-width: 950px) {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        background: #fcf0df;
+        border-radius: 2px;
+        color: #787878;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        padding: 4px 6px;
+      }
+    }
+  }
+
+  .reviews {
+    @media (max-width: 950px) {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    span {
+      @media (max-width: 950px) {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        background: #000;
+        border-radius: 4px;
+        padding: 2px 2px;
+      }
+
+      .logo_icon {
+        @media (max-width: 950px) {
+          aspect-ratio: 1/1;
+          object-fit: contain;
+        }
+      }
+    }
+
+    p {
+      @media (max-width: 950px) {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #383838;
+      }
+    }
+  }
+
+  .view {
+    @media (max-width: 950px) {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.03em;
+      text-decoration: underline;
+      color: white;
+      padding-bottom: 20px;
+    }
+  }
+
+  .view_btn {
+    @media (max-width: 950px) {
+      gap: 10px;
+      background-color: white;
+      color: #383838;
+      line-height: 22px;
+      letter-spacing: -0.03em;
+      padding: 11.5px 68px;
+      border-radius: 4px;
+      border: 2px solid #fb5741;
+      color: #fb5741;
+      font-weight: 800;
+    }
+  }
+}

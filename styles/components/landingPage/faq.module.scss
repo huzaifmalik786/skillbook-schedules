@@ -1,0 +1,33 @@
+.FAQ {
+  padding-left: 80px;
+  padding-top: 60px;
+  padding-bottom: 85.95px;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .heading {
+    font-weight: 700;
+    margin-bottom: 32px;
+    span {
+      color: var(--main_color);
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .FAQ {
+    padding: 20px 16px;
+    .heading {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      letter-spacing: -0.03em;
+      margin-bottom: 25px;
+      span {
+        color: #fb5741;
+      }
+    }
+  }
+}

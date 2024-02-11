@@ -1,0 +1,28 @@
+.our_coaches_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .all_coaches {
+    padding: 0px 0px 76px;
+    // display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 60px;
+    // grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .our_coaches_wrapper {
+    .all_coaches {
+      padding: 10px 16px 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 35px;
+    }
+  }
+}

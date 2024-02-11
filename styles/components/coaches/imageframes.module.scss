@@ -1,0 +1,22 @@
+.ImageFrames {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  // grid-template-columns: auto 555px;
+  gap: 26px;
+
+  padding: 22px 0px;
+  padding-left: 80px;
+  background-color: #f1f0f0;
+  .left {
+    .row1 {
+      display: flex;
+      gap: 25px;
+      margin-bottom: 23px;
+    }
+    .row2 {
+      display: flex;
+      gap: 21px;
+    }
+  }
+}

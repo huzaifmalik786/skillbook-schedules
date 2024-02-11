@@ -1,0 +1,82 @@
+.hello_wrapper {
+  background-color: black;
+
+  @media (max-width: 950px) {
+    padding: 0px 16px 11px;
+  }
+
+  .HelloComponent {
+    display: grid;
+    grid-template-columns: 1.3fr 1.4fr;
+
+    background-color: black;
+    padding: 0px 70px 46px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px 10px;
+    }
+
+    h1 {
+      font-size: 64px;
+      // color: var(--main_color);
+      line-height: 115.5%;
+      width: 50%;
+
+      @media (max-width: 950px) {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 115.5%;
+        margin-bottom: 15px;
+        width: 130px;
+      }
+    }
+    p {
+      width: 90%;
+
+      @media (max-width: 950px) {
+        width: auto;
+      }
+    }
+    .right {
+      // width: 80%;
+      .para1 {
+        color: #fd464a;
+
+        font-size: 20px;
+        font-weight: 600;
+
+        @media (max-width: 950px) {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          width: auto;
+        }
+      }
+      .para2 {
+        color: white;
+        padding-top: 14px;
+        padding-bottom: 34px;
+
+        @media (max-width: 950px) {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .hello_wrapper {
+    .HelloComponent {
+      .para1 {
+        width: 320px;
+      }
+    }
+  }
+}

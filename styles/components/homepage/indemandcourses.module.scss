@@ -1,0 +1,76 @@
+.demand_courses {
+  padding: 40px 80px 70px 80px;
+  background-color: #f4fdf8;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    padding: 11px 16px;
+  }
+
+  .filter_heading {
+    color: #222;
+    text-align: center;
+    font-size: 36px;
+
+    @media (max-width: 950px) {
+      font-size: 5.5vw;
+      line-height: normal;
+    }
+  }
+
+  .heading {
+    color: #383838;
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 112.6%;
+  }
+
+  .filter_btns {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 30px 0px 43px 0;
+
+    @media (max-width: 950px) {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13.5px 36px;
+      font-weight: 600;
+      line-height: 19px;
+      background: #fafafa;
+      border: 1px solid #c5c5c5;
+      color: #383838;
+
+      @media (max-width: 950px) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 120%;
+        padding: 14px 16px;
+        border-radius: 4px;
+      }
+    }
+
+    .active_btn {
+      padding: 13.5px 36px;
+      color: white;
+      font-weight: 600;
+      line-height: 19px;
+      background-color: #fb614c;
+
+      @media (max-width: 950px) {
+        font-size: 12px;
+        line-height: 120%;
+        border-radius: 4px;
+        padding: 14px 16px;
+      }
+    }
+  }
+}

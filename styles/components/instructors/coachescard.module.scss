@@ -1,0 +1,81 @@
+.coach_card {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  .coach_img {
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .coach_details {
+    padding-top: 16px;
+    max-width: 302px;
+    .name {
+      line-height: 28px;
+      color: #222;
+    }
+    .position {
+      line-height: 21px;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .view_btn {
+        color: #383838;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      border: none;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fb614c;
+      background-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .coach_card {
+    .coach_img {
+      width: 100%;
+      border-radius: 4px;
+      @media (max-width: 450px) {
+      height: 142.517px;
+      }
+    }
+    .coach_details {
+      .name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+        color: #383838;
+      }
+      .position {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 139%;
+        letter-spacing: -0.03em;
+        padding-bottom: 5px;
+      }
+      button {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+      }
+      .view_btn{
+        font-size: 12px !important;
+      }
+    }
+  }
+}

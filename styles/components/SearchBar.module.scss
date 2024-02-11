@@ -1,0 +1,64 @@
+.SearchBar {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ded6d1;
+  min-width: 277px;
+  border-radius: 6px;
+  position: relative;
+  padding: 12px 20px;
+  width: 277px;
+  height: 46px;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+
+  .inputBox {
+    color: #bdbdbd;
+    line-height: 22px;
+    padding: 0px;
+    font-size: 15px;
+    border: 10px;
+    width: 100%;
+    outline: none;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  ::placeholder {
+    color: #bdbdbd;
+  }
+
+  .SearchIcon {
+    cursor: pointer;
+  }
+  .dropdown{
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 0;
+    width: 277px;
+    .item{
+      button{
+        text-decoration: none;
+        text-align: left;
+        width: 100%;
+        padding: 16px;
+        background: transparent;
+        outline: none;
+      }
+      border-bottom: 1px solid #bebebe;
+    }
+    .message{
+      font-weight: 600;
+      padding: 16px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.Tools {
+  background-color: #F4FDF8;
+  padding: 40px 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 950px) {
+    padding: 40px 16px;
+  }
+
+  .col_img {
+    object-fit: contain;
+    @media (max-width: 950px) {
+      // place-self: baseline;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .heading {
+    text-align: center;
+
+    @media (max-width: 950px) {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      width: 80%;
+      margin: auto;
+    }
+    @media (max-width: 550px) {
+      width: 270px;
+    }
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding-top: 29px;
+
+    @media (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col_img {
+      place-self: center;
+
+      @media (max-width: 950px) {
+        place-self: baseline;
+      }
+    }
+
+    .col_content {
+      place-self: center;
+
+      @media (max-width: 950px) {
+        place-self: baseline;
+      }
+
+      .sub_heading {
+        color: #fb5741;
+        padding-bottom: 10px;
+
+        @media (max-width: 950px) {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          padding-bottom: 2px;
+        }
+      }
+      .para {
+        font-size: 15px;
+        font-weight: 600 !important;
+
+        @media (max-width: 950px) {
+          font-size: 12px;
+          line-height: 140%;
+        }
+      }
+      .points {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 10px;
+        color: #363636;
+
+        @media (max-width: 950px) {
+        }
+
+        .point {
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          @media (max-width: 950px) {
+          }
+
+          p {
+            line-height: 21px;
+            font-weight: 400;
+
+            @media (max-width: 950px) {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: normal;
+            }
+          }
+
+          .check_mark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fb5741;
+            color: white;
+            border-radius: 2px;
+            width: 12px;
+            height: 12px;
+
+            @media (max-width: 950px) {
+              min-width: 12px;
+              min-height: 12px;
+            }
+
+            // img{
+            //   @media (max-width:950px) {
+            //       width: 4.8px;
+            //       height: 3.66px;
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}

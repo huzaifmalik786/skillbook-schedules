@@ -1,0 +1,114 @@
+.roadmap {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  //   padding: 40px 60px 79.5px 0px;
+
+  @media (max-width: 950px) {
+  }
+  .info {
+    padding-left: 79.5px;
+    background-color: white;
+    display: flex;
+    gap: 64px;
+    letter-spacing: -0.03em;
+    line-height: 139%;
+    margin-bottom: 60px;
+
+    @media (max-width: 950px) {
+      padding: 11px 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .box {
+      width: 10%;
+
+      @media (max-width: 950px) {
+        width: auto;
+      }
+      .name {
+        border-bottom: 1px solid #fb614c;
+        padding-bottom: 8px;
+
+        @media (max-width: 950px) {
+          border-bottom: 2px solid #fb614c;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 139%;
+        }
+      }
+      p {
+        margin-top: 4px;
+        font-size: 16px;
+
+        @media (max-width: 950px) {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 120%;
+        }
+      }
+    }
+  }
+  .bottom {
+    background: #fff9f1;
+    padding-left: 79.5px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: flex;
+    gap: 284px;
+
+    @media (max-width: 950px) {
+    }
+    .SAFe {
+      width: 40%;
+
+      @media (max-width: 950px) {
+      }
+
+      .para1 {
+        letter-spacing: 0.005em;
+        line-height: 18px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 16px;
+
+        @media (max-width: 950px) {
+        }
+      }
+      .para2 {
+        letter-spacing: 0.005em;
+
+        @media (max-width: 950px) {
+        }
+      }
+      .link {
+        color: #fb614c;
+        margin-top: 42.75px;
+        display: flex;
+        gap: 10px;
+        text-decoration: underline;
+        align-items: center;
+
+        @media (max-width: 950px) {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+  .roadmap {
+    .info {
+      .box {
+        .name {
+          font-size: 22px;
+        }
+        p {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

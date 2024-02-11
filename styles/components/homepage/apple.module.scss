@@ -1,0 +1,83 @@
+.animation_section {
+  background-color: #f6f6f6;
+  padding-top: 2vw;
+  text-align: center;
+  //   height: 50vh;
+
+  //   z-index: 99999;
+
+  .gradient {
+    text-align: center;
+    // margin-top: 2.2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 700ms background-color box-shadow;
+    position: relative;
+    // padding-top: 8vw;
+
+    .gradient_circle {
+      //   margin-top: 3vw;
+      height: 300px;
+      //   height: 22vw;
+      width: 22vw;
+      //   margin-bottom: 5.2vw;
+      //   border-radius: 100vw;
+      //   color: white;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   //   background-image: url("https://99xassets.s3.ap-south-1.amazonaws.com/gradient.gif");
+      //   background-repeat: no-repeat;
+      //   background-position: center;
+      //   background-size: cover;
+      @media (max-width: 756px) {
+        height: 50vw;
+        width: 50vw;
+      }
+
+      @media (max-width: 420px) {
+        height: 80vw;
+        width: 80vw;
+        margin-bottom: 15.2vw;
+      }
+    }
+
+    .gradient_four {
+      position: absolute;
+      top: 12vw;
+
+      @media (max-width: 786px) {
+        position: absolute;
+        top: 23vw;
+        left: 16vw;
+      }
+
+      @media (max-width: 420px) {
+        position: absolute;
+        top: 43vw;
+        left: 4vw;
+      }
+
+      .perk {
+        h4 {
+          text-align: center;
+          color: #fb5741;
+        }
+
+        p {
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding-top: 9px;
+
+          @media (max-width: 950px) {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

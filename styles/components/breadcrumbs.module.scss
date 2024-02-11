@@ -1,0 +1,44 @@
+// .breadcrumbs {
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding: 28px 0px 18px 80px;
+  list-style: none;
+
+  .item {
+    p {
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: -0.03em;
+      color: #d2d2d2;
+    }
+
+    font-size: 12px;
+    color: #d2d2d2;
+
+    line-height: 17px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+  }
+
+  .active {
+    // color: #dbdbdb;
+    color: #9a9a9a;
+    font-size: 12px;
+
+    line-height: 17px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 950px) {
+  .breadcrumb {
+    padding: 10px 16px;
+    display: none;
+  }
+}
