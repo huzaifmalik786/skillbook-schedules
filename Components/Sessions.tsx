@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import moment from "moment-timezone";
-import Styles from "../styles/components/coaches/sessions.module.scss";
+import Styles from "../styles/components/sessions.module.scss";
 import Highlights from "./Schedule/Highlights";
 import NoScheduleFound from "./Schedule/NoScheduleFound";
 import SessionsRow from "./SessionsRow";

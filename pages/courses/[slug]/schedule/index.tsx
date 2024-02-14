@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 //redux
 import { dispatch } from "../../../../redux/store";
 import { useSelector } from "react-redux";
 import { scheduleActions } from "../../../../redux/slices/schedule";
-import Styles from "../../../../styles/components/schedule/index.module.scss";
 
 import Sessions from "../../../../Components/Sessions";
 import { GetStaticPaths } from "next";
@@ -73,15 +72,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: false, // can also be true or 'blocking'
+		fallback: 'blocking', // can also be true or 'blocking'
 	};
 };
 
 export const getStaticProps = async ({ params }: { params: { slug: string } }) => {
-	const res2 = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses?publicationState=${process.env.PUBLICATION}&filters[slug]=${params.slug}&populate=deep,10`);
+	const res2 = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/courses?filters[slug]=${params.slug}&populate=deep,10`);
 	const data = await res2.json();
 
-	const schedule_messages = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/schedule-message?publicationState=${process.env.PUBLICATION}&populate=deep,10`);
+	const schedule_messages = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/schedule-message?populate=deep,10`)
 
 	const messages = await schedule_messages.json();
 
@@ -111,5 +110,6 @@ export const getStaticProps = async ({ params }: { params: { slug: string } }) =
 				read_more: data?.data[0]?.attributes?.course_schedule?.data?.attributes?.read_more_coach || null,
 			},
 		},
+		revalidate: 7200
 	};
 };

@@ -66,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 	return {
 		paths,
-		fallback: false, // can also be true or 'blocking'
+		fallback: 'blocking', // can also be true or 'blocking'
 	};
 };
 
@@ -105,5 +105,6 @@ export const getStaticProps = async ({
 				trainer: coachpage_data?.data[0]?.attributes?.trainer || null,
 			},
 		},
+		revalidate: 7200
 	};
 };

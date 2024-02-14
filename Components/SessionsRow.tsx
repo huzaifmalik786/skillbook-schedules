@@ -140,38 +140,6 @@ const SessionsRow = ({ index, handleOpen, event, zone, isInstructor, active, cod
           )}
         </div>
         <div className={Styles.price}>
-          {/* {event?.event_currencies?.length > 1 ? (
-            <>
-              {userLocationPrice?.length ? (
-                <>
-                  <p className={Styles.cancelled}>
-                    {userLocationPrice[0]?.currency_info?.currency_code}
-                    {userLocationPrice[0]?.currency_info?.symbol}
-                    {userLocationPrice[0]?.r_price}
-                  </p>
-                  <h6>
-                    {userLocationPrice[0]?.currency_info?.currency_code}
-                    {userLocationPrice[0]?.currency_info?.symbol}
-                    {userLocationPrice[0]?.eb_price}
-                  </h6>
-                </>
-              ) : (
-                <>
-                  <p className={Styles.cancelled}>
-                    {defaultLocatinPrice[0]?.currency_info?.currency_code}
-                    {defaultLocatinPrice[0]?.currency_info?.symbol}
-                    {defaultLocatinPrice[0]?.r_price}
-                  </p>
-                  <h6>
-                    {defaultLocatinPrice[0]?.currency_info?.currency_code}
-                    {defaultLocatinPrice[0]?.currency_info?.symbol}
-                    {defaultLocatinPrice[0]?.eb_price}
-                  </h6>
-                </>
-              )}
-            </>
-          ) : (
-            <> */}
           <p className={Styles.cancelled}>
             {event?.currency} {event?.retail_price}
           </p>
